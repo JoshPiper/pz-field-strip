@@ -1,0 +1,5 @@
+ContextMenu_EN = {
+    ContextMenu_NET_ClearFirearm = "Field Strip",
+    ContextMenu_NET_ClearFirearms = "Field Strip %1 Weapons",
+    ContextMenu_NET_PartsAvailableNoScrewdriver = "You require a screwdriver to field strip this weapon."
+}
