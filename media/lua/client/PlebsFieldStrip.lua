@@ -73,23 +73,6 @@ local function hasAvailableAction(weapon, inv)
 	return false
 end
 
-local function hasAvailableActions(weapons, inv)
-	local rejected
-
-	for _, weapon in ipairs(weapons) do
-		local allow, reason = hasAvailableAction(weapon, inv)
-		if allow then
-			return true
-		end
-
-		if not allow and reason then
-			rejected = reason
-		end
-	end
-
-	return false, rejected
-end
-
 local function onClearGun(weapon, ply)
 	local idx = ply:getPlayerNum()
 	if not weapon:getMagazineType() then
